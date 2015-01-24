@@ -1,6 +1,6 @@
 #Author Miguel Salazar, ECS40, Winter 2014
 
-if [[ $# -lt 2 ]]; then
+if [[ $# -eq 0 ]]; then
     echo "usage: $0 directory pattern [-grep option]*"
   exit 1 #exits with failure of 1 because it does not reach the second peramitter.
 fi   
