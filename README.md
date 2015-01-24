@@ -1,3 +1,3 @@
 # ECS40
 
-Program 2 
+Miguel Salazar & Eric Fleming Github for ECS40.
