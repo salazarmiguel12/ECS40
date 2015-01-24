@@ -2,7 +2,7 @@
 
 if [[ $# -eq 0 ]]; then
     echo "usage: $0 directory pattern [-grep option]*"
-  exit 1 #exits with failure of 1 because it does not reach the second peramitter.
+    exit 1 #exits with failure of 1 because it does not reach the second peramitter.
 fi   
 
 if [[ $# -eq 2 ]]; then
