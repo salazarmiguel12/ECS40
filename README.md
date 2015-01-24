@@ -1,3 +1,3 @@
 # ECS40
 
-Programs for ECS40
+Programs for ECS40, PLEASE DO NOT PLAGIARIZE OUR CODE! 
