@@ -33,7 +33,7 @@ else
             # uncompress .tar.Z
           else
             if [[ "$1" == *.zip ]]; then
-              #finish this part
+              unzip $1 $2 $3 $4 $5 $6 $7 $8
             # uncompress .zip
             else
               echo "$0: $1 has no compression extension."
