@@ -1,3 +1,4 @@
+#!/bin/bash
 #Author Miguel Salazar, ECS40, Winter 2014
 
 if [[ $# -eq 0 ]]; then
