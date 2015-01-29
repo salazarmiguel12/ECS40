@@ -1,9 +1,9 @@
 #! /bin/bash
 #Author Miguel Salazar, ECS40, Winter 2014
 if [[ $# -eq 0 ]]; then
-    echo "usage: grepdir.sh directory pattern [-grep option]*"
+    echo "usage: uncomp {filelist}+"
     exit 1 #exits with failure of 1 because it does not reach the second peramitter.
-fi
+fi   
 
 array=($1 $2 $3 $4)
 for i in "${array[@]}"
