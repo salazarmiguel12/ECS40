@@ -8,14 +8,15 @@ fi
 array=($1 $2 $3 $4)
 for i in "${array[@]}"
 do
-	if [[ "$i" == *.tar ]]; then
-  		echo "went in"
-  		tar -xvf $i 
-  		# uncompress .tar 
+    if [[ "$i" == *.tar ]]; then
+  	echo "went in"
+  	tar -xvf $i 
+  	# uncompress .tar 
+    fi
     if [[ "$i" == *.tar.gz ]]; then
      	tar -xvf $i
       	# uncompress .gz
-    
+    fi
     fi [[ "$i" == *.tgz ]]; then
        	tar -xvf $i
         # uncompress .tgz
