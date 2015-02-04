@@ -17,16 +17,15 @@ void printPermissions(const Permissions *permissions);
 
 #ifndef PERMISSIONS_H
   #define PERMISSIONS_H
-  using namespace std;
-  
-class Permissions{
-  short permissions;
-public:
-  void print() const;
-  void set(short originalPermissions, short umask);
-}; // class Permissions
 
-  void set(short originalPermissions, short umask);
-  void print();
-        
-#endif //PERMISSIONS_H
+class Permissions 
+{
+  short permissions;
+  
+public:
+
+  void set(short originalPermissions, short umask) const;
+  void print() const;
+
+};
+#endif  // PERMISSIONS_H
