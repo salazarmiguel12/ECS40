@@ -1,32 +1,30 @@
 // Author: Sean Davis
-/*
-#ifndef PERMISSIONS_H
-  #define PERMISSIONS_H
 
-typedef struct 
+#include <iostream>
+#include "permissions.h"
+using namespace std;
+
+void Permissions::set(short originalPermissions, 
+                       short umask)
 {
-  short permissions;
-} Permissions;
+  permissions = originalPermissions & ~umask;
+}  // Permissions::set()
 
-void createPermissions(Permissions *permissions, short originalPermissions, 
-                       short umask);
-void printPermissions(const Permissions *permissions);
 
-#endif  // PERMISSIONS_H
-*/
-
-#ifndef PERMISSIONS_H
-  #define PERMISSIONS_H
-  using namespace std;
+void Permissions::print() const
+{
+  if (permissions & 4)
+    cout << "r";
+  else  // no read permissions
+    cout << "-";
   
-class Permissions{
-  short permissions;
-public:
-  void print() const;
-  void set(short originalPermissions, short umask);
-}; // class Permissions
-
-  void set(short originalPermissions, short umask);
-  void print();
-        
-#endif //PERMISSIONS_H
+  if (permissions & 2)
+    cout << "w";
+  else  // no write permissions
+    cout << "-";
+  
+  if (permissions & 1)
+    cout << "x";
+  else  // no execute permissions
+    cout << "-";
+}  // Permissions::print()
